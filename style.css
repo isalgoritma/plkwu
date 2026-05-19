@@ -597,76 +597,119 @@ body{
 
 @media screen and (max-width:768px){
 
+    /* NAVBAR */
+
     .navbar{
         flex-direction:column;
+        justify-content:center;
         align-items:center;
-        padding:16px 5%;
-        gap:16px;
+        gap:18px;
+        padding:18px 5%;
+        position:relative;
     }
 
     .nav-links{
         flex-wrap:wrap;
         justify-content:center;
-        gap:12px;
-        text-align:center;
+        gap:18px;
     }
+
+    .nav-links a{
+        font-size:16px;
+    }
+
+    .order-btn{
+        padding:14px 36px;
+        font-size:16px;
+    }
+
+    /* HERO */
 
     .hero{
-        flex-direction:column;
+        min-height:auto;
+        padding:70px 7% 90px;
+
+        justify-content:center;
         text-align:center;
-        padding:140px 5% 80px;
-        gap:40px;
+
+        background-position:center;
     }
 
-    .hero-text,
-    .hero-image{
+    .hero-text{
         width:100%;
+        max-width:100%;
+
+        left:0;
+    }
+
+    .badge{
+        margin:auto auto 20px;
+        font-size:15px;
+        padding:12px 22px;
     }
 
     .hero h1{
-        font-size:34px;
+        font-size:58px;
+        line-height:1.1;
+        margin-bottom:20px;
     }
 
     .hero p{
-        font-size:15px;
+        font-size:18px;
+        line-height:1.8;
+        margin-bottom:30px;
     }
 
     .hero-buttons{
         justify-content:center;
         flex-wrap:wrap;
+        gap:16px;
     }
+
+    .explore-btn,
+    .impact-btn{
+        padding:16px 34px;
+        font-size:18px;
+    }
+
+    /* GRID */
 
     .highlight,
     .products-grid,
-    .impact-stats,
-    .impact-story,
     .eco-grid,
+    .impact-story,
+    .impact-stats,
     .team-grid,
     .team-values{
         grid-template-columns:1fr;
     }
 
-    .card,
     .product-card,
+    .team-card,
     .eco-card,
-    .impact-card,
-    .story-card,
-    .team-card{
-        padding:20px;
+    .impact-card{
+        width:100%;
     }
 
-    .circle-bg{
-        width:220px;
-        height:220px;
+    /* SECTION TITLE */
+
+    .products-hero h1,
+    .impact-hero h1,
+    .eco-hero h1,
+    .team-hero h1{
+        font-size:38px;
     }
 
-    .main-mascot{
-        font-size:90px;
+    /* CTA */
+
+    .cta,
+    .product-cta,
+    .impact-cta,
+    .team-cta{
+        width:92%;
+        padding:50px 8%;
     }
 
-    footer{
-        padding:24px 5%;
-    }
 }
 
 /* IMPACT PAGE */
