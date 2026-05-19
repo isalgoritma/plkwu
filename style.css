@@ -25,7 +25,7 @@ body{
 
     padding:20px 8%;
 
-    position:fixed;
+    position:relatived;
 
     top:0;
 
@@ -34,7 +34,11 @@ body{
     backdrop-filter:blur(10px);
 
     z-index:1000;
+    transition: 
+    transform 0.35s ease,
+    box-shadow 0.3s ease;
 }
+
 
 .logo{
     font-size:22px;
